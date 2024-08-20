@@ -1,4 +1,5 @@
 const express = require('express');
+const naipe controller = require('/controllers/naipe.js')
 const app = express();
 const port = 3000;
 
