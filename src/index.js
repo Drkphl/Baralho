@@ -1,3 +1,5 @@
+const express = require('express');
+const naipe_controller = require('./controllers/naipe.js');
 const app = express();
 const port = 3000;
 
@@ -26,7 +28,7 @@ app.put('/naipe/:id', (req, res) => {
 });
 
 app.delete('/naipe/:id', (req, res) => {
-    naipe_controller.destroy(req.params.id);
+    const code = naipe_controller.destroy(req.params.id);
     res.json();
 });
 

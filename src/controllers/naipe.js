@@ -35,7 +35,7 @@ const update = (id, body) => {
         return 200;
     }
 
-    return 400;
+    return 404;
 };
 
 const destroy = (id) => {
